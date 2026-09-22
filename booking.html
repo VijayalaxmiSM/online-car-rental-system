@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Car Booking</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="form-box">
+
+<h2>Book Your Car</h2>
+
+<form method="POST" enctype="multipart/form-data">
+
+<input type="text"
+name="username"
+placeholder="Your Name"
+required>
+
+<input type="text"
+name="family_contact"
+placeholder="Family Contact Number"
+required>
+<input type="text"
+name="mobile"
+placeholder="Mobile Number"
+required>
+
+<input type="text"
+name="car"
+placeholder="Car Name"
+required>
+
+<input type="number"
+name="days"
+placeholder="Number of Days"
+required>
+
+<label>Upload Driving License</label>
+
+<input type="file" name="license" required>
+
+<label>Upload Aadhaar Card</label>
+
+<input type="file" name="aadhaar" required>
+>
+
+<button type="submit">
+Confirm Booking
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

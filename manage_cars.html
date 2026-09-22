@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Cars</title>
+</head>
+<body>
+    <h1>Manage Cars</h1>
+
+    <form action="/add_car" method="POST">
+        <input type="text" name="car_name" placeholder="Car Name" required>
+        <input type="text" name="car_model" placeholder="Car Model" required>
+        <input type="number" name="price" placeholder="Price Per Day" required>
+        <button type="submit">Add Car</button>
+    </form>
+
+    <br>
+    <a href="/admin_panel">Back to Dashboard</a>
+</body>
+</html>

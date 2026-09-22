@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Available Cars</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<h1 style="text-align:center;">Available Cars</h1>
+
+{% for car in cars %}
+
+<div class="card">
+
+<img src="{{ car.image }}" alt="Car">
+
+<h3>{{ car.name }}</h3>
+
+<p>Price: ₹{{ car.price }}</p>
+
+<a href="/booking">
+<button>Book Now</button>
+</a>
+
+</div>
+
+{% endfor %}
+
+</body>
+</html>

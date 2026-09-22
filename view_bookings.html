@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Bookings</title>
+</head>
+<body>
+    <h1>View Bookings</h1>
+
+    <table border="1">
+        <tr>
+            <th>Booking ID</th>
+            <th>User Name</th>
+            <th>Car Name</th>
+            <th>Date</th>
+        </tr>
+
+        {% for booking in bookings %}
+        <tr>
+            <td>{{ booking[0] }}</td>
+            <td>{{ booking[1] }}</td>
+            <td>{{ booking[2] }}</td>
+            <td>{{ booking[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href="/admin_dashboard">Back to Dashboard</a>
+</body>
+</html>

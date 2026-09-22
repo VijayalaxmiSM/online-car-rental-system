@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GPS Tracking</title>
+</head>
+
+<body>
+
+<h2>Current Vehicle Location</h2>
+
+<p id="location">Detecting...</p>
+
+<script>
+
+navigator.geolocation.getCurrentPosition(
+function(position){
+
+document.getElementById("location").innerHTML =
+"Latitude: " +
+position.coords.latitude +
+"<br>Longitude: " +
+position.coords.longitude;
+
+}
+);
+
+</script>
+
+</body>
+</html>
